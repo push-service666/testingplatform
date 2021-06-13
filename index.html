@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Webpage for testing!</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/scripts.js"></script>
+</head>
+
+<body>
+  <h1> App for testing</h1>
+  <h2>Subscribe to Get Push Notifications!</h2>
+  <div id="GiveAccess" style="display:none;">
+    Give access to making notifications:
+    <button id="PromptForAccessBtn">Prompt</button>
+  </div>
+  <div id="NoSupport" style="display:none;">
+    Your browser does not support Push Notifications or you have blocked notifications
+  </div>
+  <form action="" id="form" style="display:none;" method="POST">
+    <label for="client">Your name: </label>
+    <input id="client" name="client" /><br />
+
+    <input id="endpoint" name="endpoint" hidden />
+    <input id="p256dh" name="p256dh" hidden />
+    <input id="auth" name="auth" hidden />
+
+    <button type="submit" id="submit">Subscribe</button>
+  </form>
+</body>
+
+</html>
