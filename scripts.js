@@ -1,6 +1,6 @@
 if ('serviceWorker' in navigator) {
     window.addEventListener("load", () => {
-        navigator.serviceWorker.register("/service-worker.js")
+        navigator.serviceWorker.register("/testingplatform/service-worker.js")
             .then((reg) => {
                 if (Notification.permission === "granted") {
                     console.log("access granted")
