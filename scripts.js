@@ -74,7 +74,7 @@ $(document).ready(function () {
         var form = $(this);
         var data = form.serializeArray();
         $.ajax({
-            url: "https://push-service-api.herokuapp.com//subscriber",
+            url: "https://push-service-api.herokuapp.com/subscriber",
             dataType: 'json',
             type: 'POST',
             contentType: 'application/json',
