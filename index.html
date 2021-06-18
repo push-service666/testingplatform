@@ -3,11 +3,45 @@
 
 <head>
   <title>Webpage for testing!</title>
+  <link rel="stylesheet" href="index.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script type="text/javascript" src="/testingplatform/scripts.js"></script>
 </head>
 
 <body>
+  <!-- Taken from https://codepen.io/jonnitto/project/editor/XRPjxx -->
+<video width="1280" height="720" class="background" autoplay muted loop>
+  <source src="https://codepen.jonnitto.ch/BackgroundVideo.mp4" type="video/mp4">
+</video>
+<form class="form-card">
+    
+    <fieldset class="form-fieldset">
+        <legend class="form-legend">This is a site for testing
+            <br>Subscribe for getting push-notifications
+        </legend>
+        <div id="GiveAccess" style="display:none;">
+            Give access to making notifications:
+            <button id="PromptForAccessBtn" >Prompt</button>
+          </div>
+          <div id="NoSupport" style="display:none;">
+            Your browser does not support Push Notifications or you have blocked notifications
+          </div>
+        <div class="form-element form-input">
+            <input id="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9" class="form-element-field" 
+            placeholder="Please fill in your full name" type="input" required name="subscriberName"/>
+            <div class="form-element-bar"></div>
+            <label class="form-element-label" for="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9">Name</label>
+        </div>
+        <input id="endpoint" name="endpoint" hidden />
+        <input id="p256dh" name="p256dh" hidden />
+        <input id="auth" name="auth" hidden />
+    </fieldset>
+    <div class="form-actions">
+        <button class="form-btn" type="submit" id="submit">Subscribe</button>
+        
+    </div>
+</form>
+<!--
   <h1> App for testing</h1>
   <h2>Subscribe to Get Push Notifications!</h2>
   <div id="GiveAccess" style="display:none;">
@@ -27,6 +61,7 @@
 
     <button type="submit" id="submit">Subscribe</button>
   </form>
+  -->
 </body>
 
 </html>
