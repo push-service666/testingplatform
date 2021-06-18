@@ -72,6 +72,8 @@ $(document).ready(function () {
     $("#form").submit(function (e) {
         e.preventDefault();
         var form = $(this);
+        $("#success").hide();
+        $("#loading").show();
         var data = form.serializeArray();
         $.ajax({
             url: "https://push-service-api.herokuapp.com/subscriber",
@@ -80,9 +82,12 @@ $(document).ready(function () {
             contentType: 'application/json',
             data: JSON.stringify(getFormData(data)),
             success: function (data) {
+                $("#loading").hide();
+                $("#success").show();
                 console.log("DATA POSTED SUCCESSFULLY" + data);
             },
             error: function (jqXhr, textStatus, errorThrown) {
+                $("#loading").hide();
                 console.log(errorThrown);
             }
         });
